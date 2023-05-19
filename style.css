@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lacquer', cursive;
+}
+body {
+    background: url(./img/bg.jpg) center/cover;
+    height: 95vh;
+}
+.img-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    text-align: center;
+    margin-top: 60px;
+    text-transform: uppercase;
+    background: linear-gradient(#950101, #ff000037);
+    padding: 13px;
+    animation: h1Anim linear 2s infinite alternate;
+}
+@keyframes h1Anim {
+    from { color: black}
+    to { color: #3d0000}
+}
+.countdown-container {
+    margin-top: 60px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.time-container {
+    color: #950101;
+    font-size: 2.5rem;
+    margin: 20px;
+}
+#daysI, #hoursI,#minutesI, #secondsI{
+    color: black;
+    background: linear-gradient(#950101, #ff000037);
+}
+#daysI {  
+    border-radius: 70% 30% 74% 26% / 16% 65% 35% 84% ;
+    padding: 10px;
+}
+#hoursI {    
+    border-radius: 29% 71% 41% 59% / 58% 64% 36% 42% ;
+    padding: 10px;
+}
+#minutesI {    
+    border-radius: 20% 71% 90% 26% / 50% 98% 36% 32% ;
+    padding: 10px;
+}
+#secondsI {
+    border-radius:29% 71% 15% 85% / 87% 12% 88% 13% ;
+    padding: 10px;
+}
