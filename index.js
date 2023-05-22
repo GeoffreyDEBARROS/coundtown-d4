@@ -1,6 +1,6 @@
 const updateCountdown = () => {
   let today = new Date();
-  let launchDay = new Date(2023, 5, 6, 1, 0);
+  let launchDay = new Date(2023, 5, 2, 1, 0);
   let countDown = launchDay - today;
 
   // Convertir la différence en millisecondes en jours, heures, minutes et secondes
